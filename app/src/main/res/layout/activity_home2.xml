@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/abcd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    tools:context=".UI.HomeActivity">
+    <ImageView
+        android:id="@+id/twitter_l"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logo" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/twitter_l"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/l_layout_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/invice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="start|center"
+                    android:text="Invoice/CN No."
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/editText_invoice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:gravity="start"
+                    android:fontFamily="sans-serif"
+                    android:hint="Invoice/CN No"
+                    android:textColorHint="@color/offwhite"
+
+                    android:textColor="@color/black"                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/emal_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="start|center"
+                    android:text="Invoice/CN Date"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/editText_invoice_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:gravity="start"
+                    android:fontFamily="sans-serif"
+                    android:textColorHint="@color/offwhite"
+
+                    android:textColor="@color/black"
+                    android:hint="Enter Username"
+
+                    android:textSize="15dp" />
+
+
+
+                <TextView
+                    android:id="@+id/emal_Type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="start|center"
+                    android:text="Invoice Type"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/editText_Type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:gravity="start"
+
+                    android:textColorHint="@color/offwhite"
+
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif"
+                    android:hint="Invoice Type"
+                    android:textSize="15dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/btnLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/instagram_border_btn_2"
+                        android:text="Find"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:fontFamily="sans-serif"
+                        android:layout_weight="1"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+
+
+                    <Button
+                        android:id="@+id/btnclear"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@drawable/instagram_border_btn_2"
+                        android:text="Clear"
+
+                        android:fontFamily="sans-serif"
+                        android:layout_weight="1"
+
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/booth_price"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/lin_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/booth_price1"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:orientation="horizontal"
+
+
+                >
+
+                    <TextView
+                        android:id="@+id/txt_sr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1"
+                        android:gravity="start|center"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="Document Type"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/txt_area"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="start|center"
+
+                        android:layout_weight="1"
+
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:text="Document No"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/txt_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="start|center"
+
+                        android:layout_weight="1"
+
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:text="Document Date"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/txt_booth_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="start|center"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:text="Original Amount"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+
+
+                    <TextView
+                        android:id="@+id/txt_price1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+
+
+                        android:gravity="start|center"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:text="Remaining Amount"
+
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+
+
+                </LinearLayout>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rw_invoice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:scrollbars="none"
+
+                    />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

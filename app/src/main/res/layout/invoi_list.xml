@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:id="@+id/lin_membackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/date1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="IVV"
+            android:fontFamily="sans-serif"
+
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+        <TextView
+            android:id="@+id/dat2e"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="sans-serif"
+
+            android:text="52252"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/t3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="20 Jan 2022"
+            android:layout_weight="1"        android:fontFamily="sans-serif"
+
+
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/date4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="25025"
+            android:fontFamily="sans-serif"
+
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/date5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="sans-serif"
+            android:text="18525"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/teal_200"
+        android:layout_below="@+id/lin_membackground"
+        android:layout_marginTop="10dp">
+
+    </View>
+</RelativeLayout>
